@@ -19,6 +19,6 @@ t = time.time()
 tempC = mcp.temperature
 tempF = tempC * 9 / 5 + 32
 if cels:
-    print(f"{t}{tempC:.2f}")
+    print(f"{t},{tempC:.2f}")
 else:
-    print(f"{t}{tempF:.2f}")
+    print(f"{t},{tempF:.2f}")

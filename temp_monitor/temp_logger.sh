@@ -5,7 +5,7 @@ FILE="temp_log.txt"
 head="Time,temp"
 echo $head > $FILE
 
-T=$"F"
+T=$"C"
 if [[ $1 == "-f" || $1 == "-F" ]]; then
 	T=$"f"
 fi 
