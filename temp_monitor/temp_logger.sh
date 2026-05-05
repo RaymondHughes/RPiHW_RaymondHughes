@@ -11,10 +11,10 @@ if [[ $1 == "-f" || $1 == "-F" ]]; then
 fi 
 
 while true; do
-	echo 'Monitoring Temperature'
+	#echo 'Monitoring Temperature'
 	#Monitor Time & Temp with python
-	text=$(python temp_monitor/tempmonitor.py "$T")
-	printf "$text\n" >> $FILE
+	text=$(python tempmonitor.py "$T")
+	printf "$text\n" >> $FILE1
 
-	sleep 0.1
+	sleep .1
 done

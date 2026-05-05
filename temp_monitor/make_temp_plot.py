@@ -15,7 +15,7 @@ t = t - t0
 temp = df["temp"]
 
 f, ax = plt.subplots()
-ax.plot(t, cpu,'k')
+ax.plot(t,temp,'k')
 ax.set_xlabel("Time (s)")
 ax.set_ylabel(f"Degrees {deg}")
 ax.set_title(f"Temperature over time, initialized at {t0}")

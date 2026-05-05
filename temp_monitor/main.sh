@@ -21,7 +21,6 @@ if [[ $1 == '-F' || $2 == '-F' ]]; then
 fi
 
 #Run Dependent scripts and open webpage
-./temp_monitor/temp_logger.sh $TEMP &
-./temp_monitor/temp_plot_update.sh $TEMP &
-
+./temp_logger.sh $TEMP &
+./temp_plot_update.sh $TEMP &
 wait
