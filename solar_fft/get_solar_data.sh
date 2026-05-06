@@ -13,8 +13,8 @@ while $GET_DATA; do
 	FILE="$FILE_HEAD$FILE_NUM$FILE_TAIL"
 	echo $head > $FILE
 
+	echo "getting 30 seconds of data..."
 	while true; do
-		echo "getting 30 seconds of data..."
 		TIME=$(python -c "import time; print(int(time.time()))")
 		INTERVAL=$((TIME-LASTTIME))
 		if [[ 1 -eq "$(echo "$INTERVAL<$PERIOD" | bc)" ]]; then
